@@ -1,7 +1,7 @@
 pipeline {
   environment {
-    registry = "gustavoapolinario/docker-test"
-    registryCredential = 'dockerhub'
+    registry = "https://global-registry.artlist.me/library/docker-test"
+    registryCredential = 'harbor-registry'
     dockerImage = ''
   }
   agent any
