@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "https://global-registry.artlist.me/library/docker-test"
+    registry = "global-registry.artlist.me/library/docker-test"
     registryCredential = 'harbor-registry'
     dockerImage = ''
   }
