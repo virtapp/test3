@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "global-registry.artlist.me/library/docker-test"
+    registry = "global-registry.virtapp.io/library/apache-php"
     registryCredential = 'harbor-registry'
     dockerImage = ''
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/gustavoapolinario/microservices-node-example-todo-frontend.git'
+        git 'https://github.com/virtapp/apache.git'
       }
     }
     stage('Building image') {
